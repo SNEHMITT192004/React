@@ -10,21 +10,40 @@ function App() {
   //       console.log("value added");
   // }
 
-  let [counter,setCounter]=useState(5);
-  //use 'let' if counter=counter+1;
+//   let [counter,setCounter]=useState(5);
+//   //use 'let' if counter=counter+1;
 
-  const addValue=()=>{
-    if(counter<20){
-    counter=counter+1;
-    setCounter(counter);
-    // console.log("value added",counter);
-    }
-}
-   const removeValue=()=>{
-    if(counter>0){
-    setCounter(counter-1);
-    }
-   }
+//   const addValue=()=>{
+//     if(counter<20){
+//     counter=counter+1;
+//     setCounter(counter);
+//     // console.log("value added",counter);
+//     }
+// }
+//    const removeValue=()=>{
+//     if(counter>0){
+//     setCounter(counter-1);
+//     }
+//    }
+
+      const [counter,setCounter]=useState(15);
+
+      const addValue=()=>{
+        setCounter(Counter=>Counter+1);
+        setCounter(Counter=>Counter+1);
+        setCounter(Counter=>Counter+1);
+        setCounter(Counter=>Counter+1);
+
+        //or setCounter(prevCounter=>prevCounter+1);
+      
+
+      }
+      const removeValue=()=>{
+            if(counter>0){
+            setCounter(counter-1);
+            }
+           }
+
 
   return (
     <>
